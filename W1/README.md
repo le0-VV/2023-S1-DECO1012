@@ -1,0 +1,1 @@
+As week 1 only has required challenges, folders for recommended & extended challenges wont be made
