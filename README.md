@@ -6,4 +6,8 @@ A public repository for DECO1012, will consist of mainly tutorial practices (see
 
 i hate javascript
 
-Notes: Week 1 may be incomplete/straight up wrong, i want paying much attention
+When committing, please follow the following file structure: master directory/week directory/challenge directory/part 1 2 or 3 etc/project files (p5.js etc)
+
+Commit 时，请遵从以下directory结构：主文件夹/每周文件夹/challenge文件夹/part 1 2 3等等/项目文件（p5.js文件之类的）
+
+Notes: Week 1 may or may not be incomplete/straight up wrong, i weren't paying much attention
