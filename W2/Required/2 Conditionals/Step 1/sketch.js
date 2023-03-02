@@ -12,9 +12,9 @@ function draw() {
   // You might hear this referred to as a "debug view";
   // you can remove it from the final design, but it will help you see
   // how the code is working, which helps remove bugs!
-  stroke(255,0,0);
-  line(width/2, 0, width/2, height);
-  stroke(0);
+  // stroke(255,0,0);
+  // line(width/2, 0, width/2, height);
+  // stroke(0);
 
   noFill();
 
