@@ -1,7 +1,31 @@
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+// }
+
+// function draw() {
+//   background(220);
+// }
+
+
+// This is one code block
+
+let xPos = 200;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  // Here we have our variable declared inside the setup function
 }
 
+// This is a different block
+
 function draw() {
-  background(220);
+  // This code won't work correctly, because the xPos variable was not declared in this code block
+
+  // We can fix this problem by either: 
+
+  // declaring xPos inside this code block, or
+
+  // making xPos a global variable
+
+  ellipse(xPos, 200, 100, 100);
 }
