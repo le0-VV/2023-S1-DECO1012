@@ -1,12 +1,3 @@
-// function setup() {
-//   createCanvas(windowWidth, windowHeight);
-// }
-
-// function draw() {
-//   background(220);
-// }
-
-
 // This is one code block
 
 let xPos = 200;
@@ -26,6 +17,8 @@ function draw() {
   // declaring xPos inside this code block, or
 
   // making xPos a global variable
+
+  // EDIT: this code works correctly now
 
   ellipse(xPos, 200, 100, 100);
 }
