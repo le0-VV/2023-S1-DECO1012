@@ -1,7 +1,23 @@
+// Declare the variables up here, but don't assign an initial value
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+
+  // Initialise the variables here!
+
+
 }
 
 function draw() {
-  background(220);
+
+  let myColor = color(255, 100, 20);
+
+  let halfHeight = height / 2;
+
+  let spawnX = random(width);
+
+  let spawnY = random(height);
+  
+  fill(myColor);
+  circle(spawnX, spawnY, halfHeight);
 }
