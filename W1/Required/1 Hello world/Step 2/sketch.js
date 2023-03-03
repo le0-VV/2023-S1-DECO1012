@@ -3,14 +3,13 @@ function setup() {
 }
 
 function draw() {
-  background(0,256,256)
+  background(225)
   let centre_X = windowWidth/2
   let centre_Y = windowHeight/2
-  ellipse(centre_X-60,centre_Y-60,100)
-  ellipse(centre_X-40,centre_Y-40,100)
-  ellipse(centre_X-20,centre_Y-20,100)
-  ellipse(centre_X,centre_Y,100)
-  ellipse(centre_X+20,centre_Y+20,100)
-  ellipse(centre_X+40,centre_Y+40,100)
-  ellipse(centre_X+60,centre_Y+60,100)
+  ellipse(centre_X-50,centre_Y-50,50)
+  ellipse(centre_X-25,centre_Y-25,50)
+  ellipse(centre_X,centre_Y,50)
+  ellipse(centre_X+25,centre_Y+25,50)
+  ellipse(centre_X+50,centre_Y+50,50)
+  line(centre_X-50,centre_Y-50,centre_X+50,centre_Y+50)
 }
