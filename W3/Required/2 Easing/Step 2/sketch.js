@@ -1,6 +1,7 @@
 let squareSize;
 let targetSize;
 let easing = 0.1;
+let interval = 1
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -13,13 +14,11 @@ function setup() {
 }
 
 function draw() {
-  background(230);
   square(width / 2, height / 2, squareSize);
 
-  if (frameCount%180 == 0){
+  if (frameCount%(60*interval) == 0){
     targetSize = random(height)
   }
 
   squareSize = lerp(squareSize, targetSize, easing);
-  print(targetSize," VS ",squareSize)
 }

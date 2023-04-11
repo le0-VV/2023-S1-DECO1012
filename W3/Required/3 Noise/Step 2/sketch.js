@@ -1,6 +1,6 @@
 // try varying the noiseScale
 // what if you used a different noiseScale for x and y?
-let noiseScale = 0.01;
+let noiseScale = 0.1;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);

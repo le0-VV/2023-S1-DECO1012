@@ -1,12 +1,12 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noStroke();
-  frameRate(10);
+  frameRate(2);
 }
 
 function draw() {
   background(230);
-  target(width / 2, height / 2, random(500), random(6));
+  target(width / 2, height / 2, random(height), random(6));
 }
 
 function target(x, y, size, circleNum) {

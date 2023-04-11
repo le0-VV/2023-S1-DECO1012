@@ -11,9 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(230);
   square(width / 2, height / 2, squareSize);
 
   squareSize = lerp(squareSize, mouseY, easing);
-  print(mouseY," VS ",squareSize)
 }
