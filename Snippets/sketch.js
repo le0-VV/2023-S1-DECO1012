@@ -1,10 +1,10 @@
-function randX() {
-  let border = 50; //some distance in from the edge of the canvas
+// WARNING: the functions here are modified to my preferences
+
+function randX(border) {
   return random(border, width - border);
 }
 
-function randY() {
-  let border = 50; //some distance in from the edge of the canvas
+function randY(border) {
   return random(border, height - border);
 }
 
@@ -20,26 +20,28 @@ function drawGridArray(numX, numY) {
   }
 }
 
-function circlePosX(angle, radius) {
+function circlePosX(angle, radius, centreX) {
   //return the x coordinate of a point on a circle
-  return sin(angle) * radius;
+  return sin(angle) * radius + centreX;
 }
 
-function circlePosY(angle, radius) {
+function circlePosY(angle, radius, centreY) {
   //return the y coordinate of a point on a circle
-  return cos(angle) * radius;
+  return cos(angle) * radius + centreY;
 }
 
-function drawPolarArray(numItems) {
+function drawPolarArray(numItems, centre, radius, shapeFunction, size) {
   //draw shapes in a circular pattern
-  let radius = 100;
   for (let i = 0; i < numItems; i++) {
     let angle = map(i, 0, numItems, 0, 360);
-    let xPos = sin(angle) * radius;
-    let yPos = cos(angle) * radius;
-    //draw something here
+    let coords = []
+    coords[0] = sin(angle) * radius + centre[0];
+    coords[1] = cos(angle) * radius + centre[1];
+    //draw something here, design your custom shape drawing functions and stuff them here
+    shapeFunction(coords, size)
   }
 }
+
 
 function randomColour() {
   //make a colour of random hue, very bright and very saturated
